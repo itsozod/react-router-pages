@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  background-color: blueviolet;
+  justify-content: center;
+  padding: 20px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  margin: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+.favCount {
+  position: absolute;
+  list-style-type: none;
+  left: 97%;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 0px 4px;
+  border-radius: 12px;
+}

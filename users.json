@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "img": "1st image.png",
+      "name": "Joycelyn",
+      "age": 25,
+      "email": "joycelyn@example.com"
+    },
+    {
+      "id": "2",
+      "img": "2nd image.png",
+      "name": "Martin",
+      "age": 22,
+      "email": "martin@example.com"
+    },
+    {
+      "id": "3",
+      "img": "3rd image.png",
+      "name": "Jordyn",
+      "age": 24,
+      "email": "jordyn@example.com"
+    },
+    {
+      "id": "4",
+      "img": "4th image.png",
+      "name": "Leo",
+      "age": 25,
+      "email": "leo@example.com"
+    },
+    {
+      "id": "5",
+      "img": "5th image.png",
+      "name": "Marilyn",
+      "age": 30,
+      "email": "marilyn@example.com"
+    },
+    {
+      "id": "6",
+      "img": "6th image.png",
+      "name": "Lindsey",
+      "age": 26,
+      "email": "lindsey@example.com"
+    },
+    {
+      "id": "7",
+      "img": "7th image.png",
+      "name": "Dias",
+      "age": 27,
+      "email": "dias@example.com"
+    },
+    {
+      "id": "8",
+      "img": "8th image.png",
+      "name": "Ryan",
+      "age": 28,
+      "email": "ryan@example.com"
+    }
+  ]
+}
