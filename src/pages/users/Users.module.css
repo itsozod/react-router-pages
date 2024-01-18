@@ -22,4 +22,8 @@
   border-radius: 12px;
   padding: 8px;
   margin: 10px;
+  cursor: pointer;
+}
+.fav_btn:hover {
+  background-color: lightgreen;
 }

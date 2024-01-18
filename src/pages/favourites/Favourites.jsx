@@ -19,7 +19,7 @@ export const Favourites = () => {
               <img className={styles.fav_img} src={fav.img} alt={fav.name} />
               <p>Age: {fav.age}</p>
               <p>Email: {fav.email}</p>
-              <button onClick={() => dispatch(deleteFavourites(fav.id))}>
+              <button className={styles.remove_btn} onClick={() => dispatch(deleteFavourites(fav.id))}>
                 Remove
               </button>
             </article>

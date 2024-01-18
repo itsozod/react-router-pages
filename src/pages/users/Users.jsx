@@ -10,12 +10,22 @@ import { Loader } from "../../components/loader/Loader";
 export const Users = () => {
   const usersList = useSelector((state) => state.usersList.usersList);
   const loader = useSelector((state) => state.usersList.loader);
+  const favourites = useSelector((state) => state.usersList.favourites);
+  console.log(favourites);
   console.log(usersList);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getUsersListData());
   }, [dispatch]);
+
+  const handleAddFavourites = (user) => {
+    const checkFavourites = favourites.some((fav) => fav.id === user.id);
+    console.log(checkFavourites);
+    if (!checkFavourites) {
+      dispatch(setFavourites(user));
+    }
+  };
 
   return (
     <>
@@ -31,7 +41,7 @@ export const Users = () => {
               <p>Email: {user.email}</p>
               <button
                 className={styles.fav_btn}
-                onClick={() => dispatch(setFavourites(user))}
+                onClick={() => handleAddFavourites(user)}
               >
                 Add to favourites
               </button>

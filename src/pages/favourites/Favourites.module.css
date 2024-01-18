@@ -24,3 +24,14 @@
   justify-content: center;
   align-items: center;
 }
+.remove_btn {
+  border: none;
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+  background-color: lightcoral;
+}
+.remove_btn:hover {
+  background-color: lightsalmon;
+}

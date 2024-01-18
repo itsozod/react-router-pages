@@ -43,3 +43,25 @@ export const getUsersListData = () => {
     }
   };
 };
+
+export const postUserListData = (formData) => {
+  return async (dispatch) => {
+    try {
+      dispatch(setLoader(true));
+      const response = await fetch("http://localhost:3000/users", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+      dispatch(getUsersListData());
+      dispatch(setLoader(false));
+      console.log(data);
+    } catch (error) {
+      dispatch(setLoader(false));
+      console.error(error.message);
+    }
+  };
+};
